@@ -12,4 +12,4 @@ public:
     ~angka();      // Destructor
     void cetakData();
     void isiData();
-};
+}; 
