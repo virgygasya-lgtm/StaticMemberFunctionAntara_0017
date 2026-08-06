@@ -8,19 +8,21 @@ private:
     int panjang;
 
 public:
-    angka(int);    // Constructor
-    ~angka();      // Destructor
+    angka(int);
+    ~angka();
     void cetakData();
     void isiData();
-}; 
+};
 
-angka::angka(int i){ // Constructor
+angka::angka(int i)
+{
     panjang = i;
     arr = new int[i];
     isiData();
 }
 
-angka::~angka(){ // Destructor
+angka::~angka()
+{
     cout << endl;
     cetakData();
     delete[] arr;
@@ -47,9 +49,9 @@ void angka::isiData()
 
 int main()
 {
-    angka belajarcpp(3);                 // Constructor Dipanggil
-    angka *ptrBelajarcpp = new angka(5); // Constructor Dipanggil
-    delete ptrBelajarcpp;                // Destructor Dipanggil
+    angka belajarcpp(3);
+    angka *ptrBelajarcpp = new angka(5);
+    delete ptrBelajarcpp;
 
     return 0;
 }
